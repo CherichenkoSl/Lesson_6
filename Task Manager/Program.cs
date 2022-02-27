@@ -1,2 +1,6 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using System.Diagnostics;
+Process[] process = Process.GetProcesses();
+for(int i=0; i<process.Length; i++)
+{
+    Console.WriteLine(process[i].ProcessName);
+}    
